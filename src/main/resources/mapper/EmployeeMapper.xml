@@ -10,9 +10,9 @@
         values(#{id},#{name},#{age});
     </insert>
     
-    <update id="updateEmployee" parameterType="tws.entity.Employee">
+    <update id="updateEmployee">
         update  `employee`
-        set name=#{name},age=#{age} where id=#{id};
+        set name=#{employee.name},age=#{employee.age} where id=#{id};
     </update>
     
      <delete id="deleteEmployee" parameterType="tws.entity.Employee">
